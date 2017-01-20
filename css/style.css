@@ -1,0 +1,32 @@
+#portfolio #first-portfolio-item-photo {
+    background-image: url("../grafika/wintry-1959267_1280.jpg");
+    height: 300px;
+    width: 300px; 
+}
+
+#portfolio #second-portfolio-item-photo {
+    background-image: url("../grafika/forest-1950402_1280.jpg");
+    height: 300px;
+    width: 300px; 
+}
+
+#portfolio .single-portfolio-item {
+	height: 250px;
+    width: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#portfolio .portfolio-image-mask {
+    background-color: rgba(74, 115, 105, 0.60);
+    height: 300px;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    text-align: center;
+}
+
+#portfolio .portfolio-image-mask:hover {
+    opacity: 1;
+}

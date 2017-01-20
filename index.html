@@ -2,10 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Maska CSS</title>
+    <title>Maski w CSS</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+<!-- Main header Start-->
+ <header id="main-header" class="container-fluid">
+    <div class="main-header-contaent">
+        <h2 id="main-header-content">Maski w CSS</h2>
+    </div>   
+ </header>
+<!--Header Stop-->
+
+
+<!--Section about START-->
+<section id="about">
+    <div class="container">
+        <dic class="row">
+            <h2>Co to właściwie jest ta maska?</h2>
+            <p>Część z Was pewnie miała już okazję korzystać z Photoshopa. Ten cieszący się sporą popularnością program graficzny daje wiele możliwości obróbki zdjęć czy edycji grafiki rastowej. To co łączy Photoshopa i CSS to możliwość wykorzystania maski. Jest to operacja bardzo często stosowana w grafice komputerowej. Maska to obiekt nakładany na warstwę, który ma proste zadanie. Ma określić przezroczystość (inaczej krycie) danej warstwy dla poszczególnych jej fragmentów. Maski przedstawia się w odcieniach szarości dlatego wyróżniamy maski:</p>
+            <ul>
+            <li>białą- brak przezroczystości, pełne krycie</li>
+            <li>czarną- pełna przezroczystość, brak krycia</li>
+            <li>szarą- częściowe krycie</li>
+          </ul>
+          <p>Przykład maski na zdjęciu:</p>
+          </div>
+</section>
+<section id="portfolio">
+             <div class="container">
+                  <div class="first-portfolio-item">
+                      <div class="single-portfolio-item" id="first-portfolio-item-photo">
+                          <div class="portfolio-image-mask">
+                          </div>
+                      </div>
+                  </div>             
+              </div>
+
+</section>
+
+<!--STOP -->
+
+<!--Section How Start-->
+<section id="how">
+    <div class="container">
+        <h2>Jak uzyskać efekt maski w CSS ? </h2>
+        <p>Maskowanie jest jedną z operacji powszechnie stosowaną w grafice komputerowej. Teraz postaram się Wam pokazać jak uzyskać taki efekt za pomocą HTML i CSS.</p>
+        <img src="grafika/Maska-html.jpg" alt="Maska-html" style="width:300px; height:250px">
+        <p>W HTML w sekcji Portfolio stworzyłam “główną” klasę o nazwie “first-portfolio-item”, w której będę zagnieżdżać kolejne klasy. Za pomocą klasy “single-portfolio-item” określam obszar w jakim będzie znajdować się zdjęcie. Nadanie id tej klasie pozwoli dodać zdjęcie oraz nadać mu odpowiednie style. Klasa “portfolio-image-mask”,pozwoli określić style maski, jaką wykorzystam</p><br />
+        <p>Na początku dodałam grafikę do CSS</p>
+        <img src="grafika/zdjecie%20css.jpg" alt="zdjecie" style="width:420px; height:100px">
+        <p>Określam style dla obszaru strony, w jakim moje zdjęcie ma się znaleźć</p>
+        <img src="grafika/obszar%20css.jpg" alt="obszar" style="width:350px; height:150px">
+        <p>Nakładam maskę na zdjęcie wykorzystując właściwości rgba oraz określam transparentność maski za pomocą opacity</p>
+        <img src="grafika/maska%20css.jpg" alt="maska" style="width:400px; height:150px">
+        <p>Aby efekt maski był widoczny po najechaniu kursorem myszki na obrazek wykorzystałam selektor hover i jemu również nadałam właściwość opacity </p>
+        <img src="grafika/hover%20css.jpg" alt="hover" style="width:350px; height:100px">
+        <p>Kody, które tu widzicie wykorzystałam, aby nałożyć maskę na  zdjęcie drzewa. </p>
+    </div>
+</section>
+<!--Section STOP-->
+
+<!--Section sum up START-->
+<scetion id="sum up">
+   <div class="container">
+   <h2>Zastosowanie w praktyce</h2>
+    <p>Wykorzystanie maski na grafice powoduje, że jest ona dynamiczna, “coś” się na niej dzieje. W ten sposób strona jest dla użytkownika atrakcyjniejsza. Wykorzystanie tego efektu najczęściej spotykałam na stronach sklepów internetowych. Maski można wykorzystać na wiele sposobów. Można umieścić na nich krótki opis czy umieścić na nich przycisk odsyłający użytkownika do kolejnej strony. Zastosowanie masek w praktycje możecie znleźć <a href="http://www.sin-say.com/pl/pl/">tutaj</a> i <a href="http://pl.dawanda.com/"> tutaj.</a></p>
+   </div>
+</scetion>
+ 
+ 
+  
+  
    
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
